@@ -1,5 +1,4 @@
 import prettier from "eslint-config-prettier/flat";
-import jsdoc from "eslint-plugin-jsdoc";
 
 import eslint from "@eslint/js";
 import { defineConfig } from "eslint/config";
