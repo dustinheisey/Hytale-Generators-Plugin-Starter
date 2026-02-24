@@ -1,0 +1,28 @@
+{
+  "name": "hytale-generators-plugin-template",
+  "license": "MIT",
+  "private": "true",
+  "author": "Dustin Heisey",
+  "type": "module",
+  "scripts": {
+    "format": "prettier . --write",
+    "lint:types": "tsc --noEmit",
+    "lint:scripts": "eslint --flag unstable_native_nodejs_ts_config . --fix",
+    "lint": "npm run lint:types && npm run lint:scripts",
+    "dev": "node --watch ./index.ts",
+    "build": "node ./index.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.3.0",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsdoc": "62.7.0",
+    "hytale-generators": "^0.2.5",
+    "prettier": "3.8.1",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "type-fest": "^5.4.4",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.56.1"
+  }
+}
